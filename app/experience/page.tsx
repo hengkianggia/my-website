@@ -1,3 +1,4 @@
+import LinkColor from "@/components/LinkColor";
 import React from "react";
 
 const Experience = () => {
@@ -21,11 +22,103 @@ const Experience = () => {
 
         <div className="w-full mt-4">
           <p>
-            Digital Amoeba is a company owned by Telkom Indonesia that focuses
-            on human development and initiating new ideas. During my internship
-            here I worked on developing the Eventeer application by optimizing
-            functions in several parts
+            <a href="https://digitalamoeba.id/" target="_blank">
+              Digital Amoeba
+            </a>{" "}
+            is a company owned by{" "}
+            <a href="https://www.telkom.co.id/sites" target="_blank">
+              Telkom Indonesia{" "}
+            </a>
+            that focuses on human development and initiating new ideas. During
+            my internship here I worked on developing the{" "}
+            <a href="https://eventeer.id/" target="_blank">
+              Eventeer{" "}
+            </a>
+            application by optimizing functions in several parts
           </p>
+
+          <ul className="ml-6 mt-4 list-disc space-y-3">
+            <li>
+              I completed bug fixes in several features that users complained
+              about in this application because they reduced the experience of
+              using the application.
+            </li>
+            <li>
+              I implemented the my-files feature which had previously been the
+              target of implementing new features to improve the user
+              experience.
+            </li>
+            <li>
+              Completing suggestions for improvements from Eventeer officials
+              for implementing Google Recaptcha to maintain the security of the
+              application.
+            </li>
+            <li>
+              Completed the need for push notifications which aims to make it
+              easier for users to receive the latest notifications from
+              application.
+            </li>
+            <li>
+              completing the task of making all application pages responsive for
+              all types of devices and answering complaints from users regarding
+              this action.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr className="bg-my-black dark:bg-my-white" />
+
+      <section className="w-full">
+        <h1 className="text-xl">Digital Amoeba</h1>
+        <h2 className="text-sm text-my-black dark:text-gray-400">
+          Internship Frontend Developer | Aug - Dec 2023{" "}
+        </h2>
+
+        <div className="w-full mt-4">
+          <p>
+            <a href="https://digitalamoeba.id/" target="_blank">
+              Digital Amoeba
+            </a>{" "}
+            is a company owned by{" "}
+            <a href="https://www.telkom.co.id/sites" target="_blank">
+              Telkom Indonesia{" "}
+            </a>
+            that focuses on human development and initiating new ideas. During
+            my internship here I worked on developing the{" "}
+            <a href="https://eventeer.id/" target="_blank">
+              Eventeer{" "}
+            </a>
+            application by optimizing functions in several parts
+          </p>
+
+          <ul className="ml-6 mt-4 list-disc space-y-3">
+            <li>
+              I completed bug fixes in several features that users complained
+              about in this application because they reduced the experience of
+              using the application.
+            </li>
+            <li>
+              I implemented the my-files feature which had previously been the
+              target of implementing new features to improve the user
+              experience.
+            </li>
+            <li>
+              Completing suggestions for improvements from Eventeer officials
+              for implementing Google Recaptcha to maintain the security of the
+              application.
+            </li>
+            <li>
+              Completed the need for push notifications which aims to make it
+              easier for users to receive the latest notifications from
+              application.
+            </li>
+            <li>
+              completing the task of making all application pages responsive for
+              all types of devices and answering complaints from users regarding
+              this action.
+            </li>
+          </ul>
         </div>
       </section>
     </div>

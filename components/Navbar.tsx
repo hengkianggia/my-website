@@ -6,6 +6,29 @@ import Link from "next/link";
 import React from "react";
 import { MdOutlineLightMode, MdOutlineNightlight } from "react-icons/md";
 
+const NavList = [
+  {
+    name: "home",
+    link: "/",
+  },
+  {
+    name: "experience",
+    link: "/experience",
+  },
+  {
+    name: "project",
+    link: "/project",
+  },
+  {
+    name: "activity",
+    link: "/activity",
+  },
+  {
+    name: "contact",
+    link: "/contact",
+  },
+];
+
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
 
@@ -17,24 +40,16 @@ const Navbar = () => {
     <>
       <ul
         className={cn(
-          "w-full my-20 flex gap-4 items-center text-my-black dark:text-my-white"
+          "w-full my-20 flex gap-4 items-center text-my-black dark:text-my-white "
         )}
       >
-        <li>
-          <Link href={"/"}>home</Link>
-        </li>
-        <li>
-          <Link href={"/experience"}>experience</Link>
-        </li>
-        <li>
-          <Link href={"/skills"}>skills</Link>
-        </li>
-        <li>
-          <Link href={"/activity"}>activity</Link>
-        </li>
-        <li>
-          <Link href={"/contact"}>contact</Link>
-        </li>
+        {NavList.map((nav) => (
+          <li key={nav.name}>
+            <Link href={nav.link} className="no-underline">
+              {nav.name}
+            </Link>
+          </li>
+        ))}
 
         <div className="ml-auto">
           {theme === "light" ? (

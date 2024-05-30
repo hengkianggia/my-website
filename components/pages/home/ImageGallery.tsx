@@ -11,6 +11,7 @@ const ImageGallery = () => {
           src={team}
           alt=""
           className="w-full h-full object-cover rounded-lg"
+          placeholder="blur"
         />
       </div>
       <div className="rounded-lg row-span-2">
@@ -18,6 +19,7 @@ const ImageGallery = () => {
           src={me}
           alt=""
           className="rounded-lg w-full h-full object-cover"
+          placeholder="blur"
         />
       </div>
       <div className="rounded-lg">
@@ -25,6 +27,7 @@ const ImageGallery = () => {
           src={team}
           alt=""
           className="w-full h-full object-cover rounded-lg"
+          placeholder="blur"
         />
       </div>
       <div className="rounded-lg row-span-2">
@@ -32,6 +35,7 @@ const ImageGallery = () => {
           src={me}
           alt=""
           className="rounded-lg w-full h-full object-cover"
+          placeholder="blur"
         />
       </div>
       <div className="rounded-lg row-span-2">
@@ -39,6 +43,7 @@ const ImageGallery = () => {
           src={me}
           alt=""
           className="rounded-lg w-full h-full object-cover"
+          placeholder="blur"
         />
       </div>{" "}
       <div className="rounded-lg bg-orange-400">
@@ -46,6 +51,7 @@ const ImageGallery = () => {
           src={team}
           alt=""
           className="w-full h-full object-cover rounded-lg"
+          placeholder="blur"
         />
       </div>
     </div>

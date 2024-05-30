@@ -25,6 +25,7 @@ export default function Home() {
             talks, and workshops. You can watch some of my favorites below.
           </p>
         </section>
+
       </div>
     </>
   );
