@@ -11,7 +11,7 @@ const Wrapper = ({
   return (
     <div
       className={cn(
-        "w-full max-w-[700px] flex flex-col justify-center items-center",
+        "w-full max-w-[680px] flex flex-col justify-center items-center",
         className
       )}
     >
