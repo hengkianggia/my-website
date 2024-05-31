@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 // import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
-import { cn } from "@/utils/utility";
 import Center from "@/components/Center";
 import Wrapper from "@/components/Wrapper";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import { cn } from "@/lib/utils";
 
 // const montserrat = Montserrat({ subsets: ["cyrillic"] });
 

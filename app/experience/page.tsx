@@ -1,5 +1,11 @@
 import LinkColor from "@/components/LinkColor";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "PNGKY | my experience🖐️",
+  description: "My experience",
+};
 
 const Experience = () => {
   return (

@@ -1,4 +1,4 @@
-import { cn } from "@/utils/utility";
+import { cn } from "@/lib/utils";
 import React from "react";
 
 const Wrapper = ({
