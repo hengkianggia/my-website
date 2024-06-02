@@ -7,6 +7,7 @@ import Wrapper from "@/components/Wrapper";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
+import Footer from "@/components/Footer";
 
 // const montserrat = Montserrat({ subsets: ["cyrillic"] });
 
@@ -38,6 +39,7 @@ export default function RootLayout({
             <Wrapper>
               <Navbar />
               {children}
+              <Footer />
             </Wrapper>
           </Center>
         </ThemeProvider>

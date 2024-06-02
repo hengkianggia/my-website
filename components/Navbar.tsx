@@ -50,8 +50,8 @@ const Navbar = () => {
           <li key={nav.name}>
             <Link
               href={nav.link}
-              className={cn("no-underline hover:", {
-                "underline underline-offset-4": pathname === nav.link,
+              className={cn("no-underline hover:text-yellow-400 decoration-yellow-400", {
+                "underline underline-offset-8": pathname === nav.link,
               })}
             >
               {nav.name}

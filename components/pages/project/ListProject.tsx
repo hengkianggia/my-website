@@ -5,7 +5,7 @@ import image from "@/public/images/team.jpg";
 
 const ListProject = () => {
   return (
-    <div className="grid grid-cols-7 items-center gap-3 w-full border-b border-black dark:border-white pb-6 cursor-pointer">
+    <div className="grid grid-cols-7 items-center gap-3 w-full cursor-pointer">
       <div className="col-span-2 overflow-hidden">
         <Image
           src={image}
