@@ -1,5 +1,5 @@
 import ListProject from "@/components/pages/project/ListProject";
-import React from "react";
+import project from "@/lib/data/listProject.json";
 
 const Project = () => {
   return (
@@ -14,10 +14,15 @@ const Project = () => {
         </p>
       </section>
 
-      <ListProject />
-      <ListProject />
-      <ListProject />
-      <ListProject />
+      {project.map((item) => (
+        <ListProject
+          key={item.id}
+          id={item.id}
+          title={item.title}
+          description={item.desc}
+          date={item.date}
+        />
+      ))}
     </div>
   );
 };
