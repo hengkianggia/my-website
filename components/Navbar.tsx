@@ -40,19 +40,22 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <div className="sticky z-50 py-5 my-10 rounded-md w-[105%] px-4 bg-my-white dark:bg-my-black bg-opacity-40 dark:bg-opacity-40 backdrop-blur-sm top-10">
       <ul
         className={cn(
-          "w-full my-20 flex gap-4 items-center text-my-black dark:text-my-white "
+          "w-full flex gap-4 items-center text-my-black dark:text-my-white "
         )}
       >
         {NavList.map((nav) => (
           <li key={nav.name}>
             <Link
               href={nav.link}
-              className={cn("no-underline hover:text-yellow-400 decoration-yellow-400", {
-                "underline underline-offset-8": pathname === nav.link,
-              })}
+              className={cn(
+                "no-underline dark:hover:text-yellow-400 dark:decoration-yellow-400 decoration-blue-500 hover:text-blue-500",
+                {
+                  "underline underline-offset-8": pathname === nav.link,
+                }
+              )}
             >
               {nav.name}
             </Link>
@@ -81,7 +84,7 @@ const Navbar = () => {
           )}
         </div>
       </ul>
-    </>
+    </div>
   );
 };
 

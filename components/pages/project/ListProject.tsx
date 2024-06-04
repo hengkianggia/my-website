@@ -14,19 +14,23 @@ const ListProject = ({ title, description, date, id }: any) => {
 
   const urlTitel = title.toLowerCase().split(" ").join("-");
   return (
-    <Link href={`/project/${urlTitel}/detail`} className="no-underline">
-      <div className="grid grid-cols-7 items-center gap-3 w-full cursor-pointer">
+    <Link
+      href={`/project/${urlTitel}/detail`}
+      className="no-underline hover:text-my-black dark:hover:text-my-white"
+    >
+      <div className="grid items-center w-full grid-cols-7 gap-3 cursor-pointer">
         <div className="col-span-2 overflow-hidden">
           <Image
             src={imageaa}
             width={200}
             alt="image"
-            className="rounded-lg max-h-28 object-cover"
+            className="object-cover rounded-lg max-h-28"
+            placeholder="blur"
           />
         </div>
 
         <div className="col-span-5">
-          <h1 className="text-3xl">{title}</h1>
+          <h1 className="text-2xl">{title}</h1>
           <h1 className="text-sm text-gray-500">{dateee}</h1>
           <p className="text-sm line-clamp-3">{description}</p>
         </div>

@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 
 const Experience = () => {
   return (
-    <div className="w-full flex flex-col gap-6">
+    <div className="flex flex-col w-full gap-6">
       <section className="w-full">
-        <h1 className="text-xl mb-10">my experience</h1>
+        <h1 className="mb-10 text-xl">my experience</h1>
         <p>
           Within a few years of my journey to become a developer. There are
           several impressive experiences that I have had, including those below
@@ -43,7 +43,7 @@ const Experience = () => {
             application by optimizing functions in several parts
           </p>
 
-          <ul className="ml-6 mt-4 list-disc space-y-3">
+          <ul className="mt-4 ml-6 space-y-3 list-disc">
             <li>
               I completed bug fixes in several features that users complained
               about in this application because they reduced the experience of
@@ -91,7 +91,7 @@ const Experience = () => {
             website development tasks with various types of needs.
           </p>
 
-          <ul className="ml-6 mt-4 list-disc space-y-3">
+          <ul className="mt-4 ml-6 space-y-3 list-disc">
             <li>
               Build personal branding websites for clients by implementing
               responsive and informative design.
