@@ -1,5 +1,5 @@
 import ImageGallery from "@/components/pages/home/ImageGallery";
-import { cn } from "@/utils/utility";
+import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (

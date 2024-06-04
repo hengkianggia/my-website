@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-// import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
-import { cn } from "@/utils/utility";
 import Center from "@/components/Center";
 import Wrapper from "@/components/Wrapper";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
-
-// const montserrat = Montserrat({ subsets: ["cyrillic"] });
+import { cn } from "@/lib/utils";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "PNGKY | welcome to my home🖐️",
@@ -38,6 +36,7 @@ export default function RootLayout({
             <Wrapper>
               <Navbar />
               {children}
+              <Footer />
             </Wrapper>
           </Center>
         </ThemeProvider>

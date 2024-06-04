@@ -1,8 +1,9 @@
 "use client";
 
-import { cn } from "@/utils/utility";
+import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 import { MdOutlineLightMode, MdOutlineNightlight } from "react-icons/md";
 
@@ -32,6 +33,8 @@ const NavList = [
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
 
+  const pathname = usePathname();
+
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
@@ -45,7 +48,12 @@ const Navbar = () => {
       >
         {NavList.map((nav) => (
           <li key={nav.name}>
-            <Link href={nav.link} className="no-underline">
+            <Link
+              href={nav.link}
+              className={cn("no-underline hover:text-yellow-400 decoration-yellow-400", {
+                "underline underline-offset-8": pathname === nav.link,
+              })}
+            >
               {nav.name}
             </Link>
           </li>
