@@ -1,17 +1,16 @@
+import Title from "@/components/Title";
 import Wrapper from "@/components/Wrapper";
 import Link from "next/link";
 import React from "react";
 
 const Activity = () => {
   return (
-    <Wrapper>
-      <section className="w-full mb-8">
-        <h1 className="mb-10 text-xl">my activity</h1>
-        <p>
-          Within a few years of my journey to become a developer. There are
-          several impressive experiences that I have had, including those below
-        </p>
-      </section>
+    <Wrapper className="gap-8">
+      <Title
+        title="my activity"
+        desc="Within a few years of my journey to become a developer. There are
+          several impressive experiences that I have had, including those below"
+      />
 
       <div className="flex flex-col w-full gap-5">
         <ListActivity

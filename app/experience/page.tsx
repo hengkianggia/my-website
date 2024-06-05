@@ -1,4 +1,4 @@
-import LinkColor from "@/components/LinkColor";
+import Title from "@/components/Title";
 import { Metadata } from "next";
 import React from "react";
 
@@ -10,13 +10,11 @@ export const metadata: Metadata = {
 const Experience = () => {
   return (
     <div className="flex flex-col w-full gap-6">
-      <section className="w-full">
-        <h1 className="mb-10 text-xl">my experience</h1>
-        <p>
-          Within a few years of my journey to become a developer. There are
-          several impressive experiences that I have had, including those below
-        </p>
-      </section>
+      <Title
+        title="my experience"
+        desc="Within a few years of my journey to become a developer. There are
+          several impressive experiences that I have had, including those below"
+      />
       <hr className="bg-my-black dark:bg-my-white" />
       <section className="w-full">
         <h1 className="text-xl">Digital Amoeba</h1>
