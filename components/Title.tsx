@@ -9,7 +9,7 @@ type Props = {
 const Title = ({ title, desc, className }: Props) => {
   return (
     <section className={cn("w-full", className)}>
-      <h1 className="mb-10 text-xl">{title}</h1>
+      <h1 className="mb-10 text-xl max-md:mb-8">{title}</h1>
       <p>{desc}</p>
     </section>
   );

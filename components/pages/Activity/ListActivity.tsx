@@ -28,7 +28,7 @@ const ListActivity = ({
         <div className="opacity-100">
           <h1 className="text-xl font-semibold line-clamp-2">{title}</h1>
           <h2 className="text-sm text-gray-700 dark:text-gray-400">{dateee}</h2>
-          <p className="mt-3 text-gray-700 dark:text-gray-400 line-clamp-3">
+          <p className="mt-3 text-gray-700 max-md:mt-2 dark:text-gray-400 line-clamp-3">
             {desc}
           </p>
         </div>
