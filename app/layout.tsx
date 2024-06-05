@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-my-white dark:bg-my-black",
+          "min-h-screen bg-my-white dark:bg-my-black scroll-smooth",
           GeistSans.className
         )}
       >

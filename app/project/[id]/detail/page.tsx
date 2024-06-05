@@ -1,9 +1,19 @@
-import React from 'react'
+"use client";
+import Wrapper from "@/components/Wrapper";
+import Eventeer from "@/components/pages/project/Eventeer";
+import Movie from "@/components/pages/project/Movie";
+import { usePathname } from "next/navigation";
+import React from "react";
 
 const DetailProject = () => {
-  return (
-    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, dolorum sunt eius, nesciunt reprehenderit at repellendus aliquid quae veniam maiores voluptas dolor fugit quisquam similique illum, excepturi vitae. Vero, eos earum in iusto a delectus iure velit saepe aperiam eum?</div>
-  )
-}
+  const pathname = usePathname();
 
-export default DetailProject
+  let content = <Movie />;
+  if (pathname.includes("eventeer")) {
+    content = <Eventeer />;
+  }
+
+  return <Wrapper className="items-start">{content}</Wrapper>;
+};
+
+export default DetailProject;

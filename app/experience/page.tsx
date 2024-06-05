@@ -1,4 +1,4 @@
-import LinkColor from "@/components/LinkColor";
+import Title from "@/components/Title";
 import { Metadata } from "next";
 import React from "react";
 
@@ -9,17 +9,13 @@ export const metadata: Metadata = {
 
 const Experience = () => {
   return (
-    <div className="w-full flex flex-col gap-6">
-      <section className="w-full">
-        <h1 className="text-xl mb-10">my experience</h1>
-        <p>
-          Within a few years of my journey to become a developer. There are
-          several impressive experiences that I have had, including those below
-        </p>
-      </section>
-
+    <div className="flex flex-col w-full gap-6">
+      <Title
+        title="my experience"
+        desc="Within a few years of my journey to become a developer. There are
+          several impressive experiences that I have had, including those below"
+      />
       <hr className="bg-my-black dark:bg-my-white" />
-
       <section className="w-full">
         <h1 className="text-xl">Digital Amoeba</h1>
         <h2 className="text-sm text-my-black dark:text-gray-400">
@@ -43,7 +39,7 @@ const Experience = () => {
             application by optimizing functions in several parts
           </p>
 
-          <ul className="ml-6 mt-4 list-disc space-y-3">
+          <ul className="mt-4 ml-6 space-y-3 list-disc">
             <li>
               I completed bug fixes in several features that users complained
               about in this application because they reduced the experience of
@@ -72,9 +68,7 @@ const Experience = () => {
           </ul>
         </div>
       </section>
-
       <hr className="bg-my-black dark:bg-my-white" />
-
       <section className="w-full">
         <h1 className="text-xl">Digtive Global Media</h1>
         <h2 className="text-sm text-my-black dark:text-gray-400">
@@ -91,7 +85,7 @@ const Experience = () => {
             website development tasks with various types of needs.
           </p>
 
-          <ul className="ml-6 mt-4 list-disc space-y-3">
+          <ul className="mt-4 ml-6 space-y-3 list-disc">
             <li>
               Build personal branding websites for clients by implementing
               responsive and informative design.
