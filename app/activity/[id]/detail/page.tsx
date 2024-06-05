@@ -1,10 +1,11 @@
+"use client";
 import React from "react";
-import image from "../../../public/images/team.jpg";
+import image from "@/public/images/team.jpg";
 import Image from "next/image";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { useRouter } from "next/navigation";
 
-const Movie = () => {
+const DetailActivity = () => {
   const router = useRouter();
   return (
     <div>
@@ -16,9 +17,9 @@ const Movie = () => {
         <h2>Back to list</h2>
       </div>
       <div className="mb-10">
-        <h1 className="text-5xl font-bold">PNGKY Movie</h1>
+        <h1 className="text-5xl font-bold">Eventeer</h1>
         <p className="text-sm text-gray-700 dark:text-gray-400">
-          hengkianggia / Jan 2023
+          hengkianggia / Aug 2023
         </p>
       </div>
 
@@ -115,4 +116,4 @@ const Movie = () => {
   );
 };
 
-export default Movie;
+export default DetailActivity;

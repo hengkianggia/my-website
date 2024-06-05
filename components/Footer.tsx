@@ -4,18 +4,18 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="w-full flex flex-col items-center my-24 border-t border-gray-700 dark:border-gray-400 pt-14 gap-14">
-      <div className="w-full flex justify-center gap-7 text-gray-700 dark:text-gray-400">
+    <div className="flex flex-col items-center w-full my-24 border-t border-gray-700 dark:border-gray-400 pt-14 gap-14">
+      <div className="flex justify-center w-full text-gray-700 gap-7 dark:text-gray-400">
         <a href="https://github.com/hengkianggia" target="_blank">
           <BsGithub
             size={24}
-            className="cursor-pointer hover:-translate-y-2 transition-all"
+            className="transition-all cursor-pointer hover:-translate-y-2"
           />
         </a>
         <a href="mailto:pengkyj00@gmail.com" target="_blank">
           <MdEmail
             size={24}
-            className="cursor-pointer hover:-translate-y-2 transition-all"
+            className="transition-all cursor-pointer hover:-translate-y-2"
           />
         </a>
         <a
@@ -24,13 +24,13 @@ const Footer = () => {
         >
           <BsWhatsapp
             size={24}
-            className="cursor-pointer hover:-translate-y-2 transition-all"
+            className="transition-all cursor-pointer hover:-translate-y-2"
           />
         </a>
         <a href="https://www.linkedin.com/in/hengkianggia/" target="_blank">
           <BsLinkedin
             size={24}
-            className="cursor-pointer hover:-translate-y-2 transition-all"
+            className="transition-all cursor-pointer hover:-translate-y-2"
           />
         </a>
       </div>

@@ -17,9 +17,7 @@ const Experience = () => {
           several impressive experiences that I have had, including those below
         </p>
       </section>
-
       <hr className="bg-my-black dark:bg-my-white" />
-
       <section className="w-full">
         <h1 className="text-xl">Digital Amoeba</h1>
         <h2 className="text-sm text-my-black dark:text-gray-400">
@@ -72,9 +70,7 @@ const Experience = () => {
           </ul>
         </div>
       </section>
-
       <hr className="bg-my-black dark:bg-my-white" />
-
       <section className="w-full">
         <h1 className="text-xl">Digtive Global Media</h1>
         <h2 className="text-sm text-my-black dark:text-gray-400">

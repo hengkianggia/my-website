@@ -30,8 +30,8 @@ const ListProject = ({ title, description, date, id }: any) => {
         </div>
 
         <div className="col-span-5">
-          <h1 className="text-2xl">{title}</h1>
-          <h1 className="text-sm text-gray-500">{dateee}</h1>
+          <h1 className="text-xl">{title}</h1>
+          <h2 className="text-sm text-gray-500">{dateee}</h2>
           <p className="text-sm line-clamp-3">{description}</p>
         </div>
       </div>

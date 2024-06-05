@@ -16,7 +16,7 @@ const Eventeer = () => {
         onClick={() => router.back()}
       >
         <IoIosArrowRoundBack size={24} />
-        <p>Back to list</p>
+        <h2>Back to list</h2>
       </div>
       <div className="mb-10">
         <h1 className="text-5xl font-bold">Eventeer</h1>
