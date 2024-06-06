@@ -1,7 +1,6 @@
 import React from "react";
 import image from "../../../public/images/team.jpg";
 import Image from "next/image";
-import { IoIosArrowRoundBack } from "react-icons/io";
 import { useRouter } from "next/navigation";
 import HeaderDetail from "@/components/HeaderDetail";
 
