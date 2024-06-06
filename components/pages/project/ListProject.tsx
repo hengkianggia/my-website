@@ -18,7 +18,7 @@ const ListProject = ({ title, description, date, id }: any) => {
       href={`/project/${urlTitel}/detail`}
       className="no-underline hover:text-my-black dark:hover:text-my-white"
     >
-      <div className="grid w-full gap-1 cursor-pointer grid-rows-7">
+      <div className="grid w-full gap-1 cursor-pointer grid-rows-7 ">
         <div className="row-span-5 overflow-hidden">
           <Image
             src={imageaa}

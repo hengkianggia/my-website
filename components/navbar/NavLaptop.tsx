@@ -1,5 +1,4 @@
 "use client";
-
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import Link from "next/link";
@@ -7,30 +6,11 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import { MdOutlineLightMode, MdOutlineNightlight } from "react-icons/md";
 
-const NavList = [
-  {
-    name: "home",
-    link: "/",
-  },
-  {
-    name: "experience",
-    link: "/experience",
-  },
-  {
-    name: "project",
-    link: "/project",
-  },
-  {
-    name: "activity",
-    link: "/activity",
-  },
-  {
-    name: "contact",
-    link: "/contact",
-  },
-];
+type navProps = {
+  navList: { name: string; link: string }[];
+};
 
-const Navbar = () => {
+const NavLaptop = ({ navList }: navProps) => {
   const { theme, setTheme } = useTheme();
 
   const pathname = usePathname();
@@ -38,15 +18,14 @@ const Navbar = () => {
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
-
   return (
-    <div className="sticky z-50 py-5 my-10 rounded-md w-[105%] px-4 bg-my-white dark:bg-my-black bg-opacity-40 dark:bg-opacity-40 backdrop-blur-sm top-10">
+    <div className="sticky z-50 py-5 my-10 rounded-md w-[105%] px-4 bg-my-white dark:bg-my-black bg-opacity-40 dark:bg-opacity-40 backdrop-blur-sm top-10 max-md:top-5 max-md:my-5">
       <ul
         className={cn(
           "w-full flex gap-4 items-center text-my-black dark:text-my-white "
         )}
       >
-        {NavList.map((nav) => (
+        {navList.map((nav) => (
           <li key={nav.name}>
             <Link
               href={nav.link}
@@ -88,4 +67,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavLaptop;

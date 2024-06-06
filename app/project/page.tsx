@@ -13,7 +13,7 @@ const Project = () => {
           really enjoyed it🎉 i&#39;ts very exciting."
       />
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 gap-3 max-md:gap-6 max-md:grid-cols-1">
         {project.map((item) => (
           <ListProject
             key={item.id}

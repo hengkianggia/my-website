@@ -1,26 +1,14 @@
 import React from "react";
 import image from "../../../public/images/team.jpg";
 import Image from "next/image";
-import { IoIosArrowRoundBack } from "react-icons/io";
 import { useRouter } from "next/navigation";
+import HeaderDetail from "@/components/HeaderDetail";
 
 const Movie = () => {
   const router = useRouter();
   return (
     <div>
-      <div
-        className="flex items-center gap-3 mb-4 text-sm text-gray-700 cursor-pointer dark:text-gray-400"
-        onClick={() => router.back()}
-      >
-        <IoIosArrowRoundBack size={24} />
-        <h2>Back to list</h2>
-      </div>
-      <div className="mb-10">
-        <h1 className="text-5xl font-bold">PNGKY Movie</h1>
-        <p className="text-sm text-gray-700 dark:text-gray-400">
-          hengkianggia / Jan 2023
-        </p>
-      </div>
+      <HeaderDetail title="PNGKY Movie" date="Jan 2023" />
 
       <div className="relative w-full overflow-hidden rounded-lg max-h-96">
         <Image
