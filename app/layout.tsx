@@ -8,6 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "PNGKY | welcome to my home🖐️",
@@ -38,6 +39,7 @@ export default function RootLayout({
               <Navbar />
               {children}
               <SpeedInsights />
+              <Analytics />
               <Footer />
             </Wrapper>
           </Center>
