@@ -4,7 +4,7 @@ import NavLaptop from "./NavLaptop";
 const NavList = [
   {
     name: "home",
-    link: "/",
+    link: "/home",
   },
   {
     name: "experience",
