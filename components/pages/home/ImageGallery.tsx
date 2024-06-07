@@ -40,8 +40,8 @@ export const Images = ({
     <div
       className={cn(
         "rounded-lg cursor-pointer group hover:scale-105 transition-all duration-500 overflow-hidden",
-        rowOne && "max-md:max-h-[140px]",
-        rowTwo && "max-md:max-h-[275px] row-span-2",
+        rowOne && "max-md:h-[140px]",
+        rowTwo && "max-md:h-[292px] row-span-2",
         className
       )}
     >
