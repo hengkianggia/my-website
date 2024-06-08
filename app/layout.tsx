@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
+import NextTopLoader from "nextjs-toploader";
 
 export const metadata: Metadata = {
   title: "PNGKY | welcome to my home🖐️",
@@ -35,6 +36,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Center>
+            <NextTopLoader showSpinner={false} color="#ffc300" />
             <Wrapper>
               <Navbar />
               {children}

@@ -30,7 +30,7 @@ const NavLaptop = ({ navList }: navProps) => {
             <Link
               href={nav.link}
               className={cn(
-                "no-underline dark:hover:text-yellow-400 dark:decoration-yellow-400 decoration-blue-500 hover:text-blue-500",
+                "no-underline hover:text-yellow-400 decoration-yellow-400 ",
                 {
                   "underline underline-offset-8": pathname === nav.link,
                 }
