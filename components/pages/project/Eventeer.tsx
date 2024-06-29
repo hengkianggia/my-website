@@ -2,9 +2,8 @@
 import { useParams, useRouter } from "next/navigation";
 import React from "react";
 
-import image from "../../../public/images/team.jpg";
+import image from "../../../public/images/eventeer.png";
 import Image from "next/image";
-import { IoIosArrowRoundBack } from "react-icons/io";
 import HeaderDetail from "@/components/HeaderDetail";
 
 const Eventeer = () => {
