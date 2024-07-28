@@ -1,11 +1,11 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
-import me from "@/public/images/me.png";
-import mee from "@/public/images/wisudaaaa.jpg";
-import meee from "@/public/images/meee.jpg";
-import team from "@/public/images/team.jpg";
-import teamku from "@/public/images/teamku.jpg";
-import group from "@/public/images/curug.png";
+import me from "@/public/images/me.webp";
+import mee from "@/public/images/wisudaaaa.webp";
+import meee from "@/public/images/meee.webp";
+import team from "@/public/images/team.webp";
+import teamku from "@/public/images/teamku.webp";
+import group from "@/public/images/curug.webp";
 import { cn } from "@/lib/utils";
 
 const ImageGallery = () => {

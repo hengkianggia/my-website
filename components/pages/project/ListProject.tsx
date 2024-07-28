@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import eventeer from "@/public/images/eventeer.png";
+import eventeer from "@/public/images/eventeer.webp";
 import movie from "@/public/images/movie.png";
 import Link from "next/link";
 
