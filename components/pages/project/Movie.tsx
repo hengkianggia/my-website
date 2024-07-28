@@ -1,5 +1,8 @@
 import React from "react";
 import image from "../../../public/images/movie.png";
+import movie1 from "../../../public/images/movie1.png";
+import movie2 from "../../../public/images/movie2.png";
+import movie3 from "../../../public/images/movie3.png";
 import Image from "next/image";
 import HeaderDetail from "@/components/HeaderDetail";
 
@@ -29,17 +32,23 @@ const Movie = () => {
         </p>
 
         <br />
-        <div className="relative grid w-full grid-cols-2 gap-4 overflow-hidden max-h-96">
+        <div className="relative grid w-full grid-cols-2 gap-4 overflow-hidden">
           <Image
-            src={image}
+            src={movie2}
             alt="maksa"
-            className="object-cover object-center w-full h-full rounded-md"
+            className="object-cover object-top w-full max-h-[450px] rounded-md"
             placeholder="blur"
           />
           <Image
-            src={image}
+            src={movie3}
             alt="maksa"
-            className="object-cover object-center w-full h-full rounded-md"
+            className="object-cover object-top w-full max-h-[450px] rounded-md"
+            placeholder="blur"
+          />
+          <Image
+            src={movie1}
+            alt="maksa"
+            className="object-cover object-top w-full max-h-[450px] rounded-md"
             placeholder="blur"
           />
         </div>
