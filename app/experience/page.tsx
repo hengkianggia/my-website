@@ -61,7 +61,7 @@ const Experience = () => {
               application.
             </li>
             <li>
-              completing the task of making all application pages responsive for
+              Completing the task of making all application pages responsive for
               all types of devices and answering complaints from users regarding
               this action.
             </li>
@@ -91,7 +91,7 @@ const Experience = () => {
               responsive and informative design.
             </li>
             <li>
-              provides a new option for Wearemania website design with a website
+              Provides a new option for Wearemania website design with a website
               design that is very easy to understand and responsive to all
               devices.
             </li>
@@ -100,7 +100,7 @@ const Experience = () => {
               of the partner websites with a feature that gives users the right
               choice regarding products that match user complaints.
             </li>
-            <li>participate in managing wearemania social media accounts.</li>
+            <li>Participate in managing wearemania social media accounts.</li>
           </ul>
         </div>
       </section>

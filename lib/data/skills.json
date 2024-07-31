@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Next.js",
+    "experience": "2022-03-22",
+    "icon": "logos:nextjs-icon"
+  },
+  { "title": "React", "experience": "2021-05-15", "icon": "logos:react" },
+  {
+    "title": "JavaScript",
+    "experience": "2021-01-10",
+    "icon": "logos:javascript"
+  },
+  {
+    "title": "TypeScript",
+    "experience": "2024-01-30",
+    "icon": "logos:typescript-icon"
+  },
+  {
+    "title": "Node.js",
+    "experience": "2023-09-18",
+    "icon": "logos:nodejs-icon"
+  },
+  {
+    "title": "Express.js",
+    "experience": "2024-03-05",
+    "icon": "simple-icons:express"
+  },
+  {
+    "title": "MongoDB",
+    "experience": "2023-10-14",
+    "icon": "logos:mongodb-icon"
+  },
+  { "title": "Zod", "experience": "2024-01-20", "icon": "logos:zod" },
+  { "title": "Flutter", "experience": "2023-12-07", "icon": "logos:flutter" },
+  { "title": "Git", "experience": "2022-03-01", "icon": "logos:git-icon" },
+  {
+    "title": "TailwindCSS",
+    "experience": "2021-08-03",
+    "icon": "logos:tailwindcss-icon"
+  },
+  {
+    "title": "Bootstrap",
+    "experience": "2022-04-03",
+    "icon": "logos:bootstrap"
+  },
+  { "title": "Redux", "experience": "2022-04-25", "icon": "logos:redux" },
+  { "title": "Axios", "experience": "2023-07-25", "icon": "logos:axios" }
+]

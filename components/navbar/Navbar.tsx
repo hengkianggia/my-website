@@ -14,10 +14,10 @@ const NavList = [
     name: "project",
     link: "/project",
   },
-  {
-    name: "activity",
-    link: "/activity",
-  },
+  // {
+  //   name: "activity",
+  //   link: "/activity",
+  // },
   // {
   //   name: "contact",
   //   link: "/contact",

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import React from "react";
 
-import imageaa from "@/public/images/team.jpg";
+import eventeer from "@/public/images/eventeer.webp";
+import movie from "@/public/images/movie.png";
 import Link from "next/link";
 
 const ListProject = ({ title, description, date, id }: any) => {
@@ -12,16 +13,16 @@ const ListProject = ({ title, description, date, id }: any) => {
     day: "numeric",
   });
 
-  const urlTitel = title.toLowerCase().split(" ").join("-");
+  const urlTitle = title.toLowerCase().split(" ").join("-");
   return (
     <Link
-      href={`/project/${urlTitel}/detail`}
+      href={`/project/${urlTitle}/detail`}
       className="no-underline hover:text-my-black dark:hover:text-my-white"
     >
       <div className="grid w-full gap-1 cursor-pointer grid-rows-7 ">
         <div className="row-span-5 overflow-hidden">
           <Image
-            src={imageaa}
+            src={title.toLowerCase() == "eventeer" ? eventeer : movie}
             width={900}
             alt="image"
             className="object-cover w-full h-56 rounded-sm"

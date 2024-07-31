@@ -1,18 +1,20 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import me from "@/public/images/me.png";
-import mee from "@/public/images/mee.jpeg";
+import mee from "@/public/images/wisudaaaa.jpg";
 import meee from "@/public/images/meee.jpg";
 import team from "@/public/images/team.jpg";
+import teamku from "@/public/images/teamku.jpg";
+import group from "@/public/images/curug.png";
 import { cn } from "@/lib/utils";
 
 const ImageGallery = () => {
   return (
     <div className="grid w-full grid-cols-3 gap-3 max-md:grid-cols-2">
-      <Images image={team} rowOne />
+      <Images image={mee} rowOne />
+      <Images image={teamku} rowTwo />
+      <Images image={group} rowOne />
       <Images image={me} rowTwo />
-      <Images image={team} rowOne />
-      <Images image={meee} rowTwo />
       <Images
         image={meee}
         rowTwo
@@ -40,7 +42,7 @@ export const Images = ({
     <div
       className={cn(
         "rounded-lg cursor-pointer group hover:scale-105 transition-all duration-500 overflow-hidden",
-        rowOne && "max-md:h-[140px]",
+        rowOne && "max-md:h-[140px] h-44",
         rowTwo && "max-md:h-[292px] row-span-2",
         className
       )}

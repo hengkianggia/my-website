@@ -1,11 +1,12 @@
 import React from "react";
-import image from "../../../public/images/team.jpg";
+import image from "../../../public/images/movie.png";
+import movie1 from "../../../public/images/movie1.png";
+import movie2 from "../../../public/images/movie2.png";
+import movie3 from "../../../public/images/movie3.png";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import HeaderDetail from "@/components/HeaderDetail";
 
 const Movie = () => {
-  const router = useRouter();
   return (
     <div>
       <HeaderDetail title="PNGKY Movie" date="Jan 2023" />
@@ -20,84 +21,37 @@ const Movie = () => {
       </div>
 
       <section className="w-full mt-6">
+        <h1 className="text-2xl font-semibold">Introduction</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-          velit, mollitia ullam nulla est ipsa amet perspiciatis modi aperiam
-          excepturi voluptas doloremque, rerum ea dolorem, suscipit fuga sint
-          tempore aspernatur dolore perferendis porro maxime optio dolorum!
-          Veritatis autem accusantium ab nam saepe temporibus qui explicabo quia
-          tempora nulla at reprehenderit velit nesciunt vero quisquam, eos culpa
-          quasi minus! Porro qui nemo saepe voluptatibus commodi, ab eos dolorem
-          hic quia aut.
-        </p>{" "}
+          <a href="https://pngky-movie.vercel.app/" target="_blank">
+            PNGKY Movie
+          </a>{" "}
+          is a website to view information on lists of films and series
+          available on the screen. In developing PNGKY Movie I work personally
+          with technologies such as nextjs, tailwindcss and tmbd API.
+        </p>
+
         <br />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae,
-          maxime officiis unde fugiat facilis, praesentium harum eveniet non
-          suscipit atque hic similique illum nihil eos necessitatibus veritatis
-          dolorem repudiandae. Expedita animi tempore quia placeat quo. Rerum
-          reprehenderit ipsa a maxime quaerat animi, facilis, amet quo deleniti
-          sed non?
-        </p>{" "}
-        <br />
-        <ul className="ml-12 list-disc">
-          <li>
-            <a href="" target="_blank">
-              NextJs
-            </a>
-          </li>
-          <li>
-            <a href="" target="_blank">
-              NextJs
-            </a>
-          </li>
-          <li>
-            <a href="" target="_blank">
-              NextJs
-            </a>
-          </li>
-          <li>
-            <a href="" target="_blank">
-              NextJs
-            </a>
-          </li>
-        </ul>
-        <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-          aliquam, minima mollitia quas non, sunt rem facilis laudantium quam
-          velit culpa officia rerum delectus, vero deserunt. Placeat velit illum
-          dolor quasi veritatis nostrum neque dolorum! Dignissimos tempore odit
-          tenetur pariatur velit. Voluptatum nisi eaque et, quod iure, earum
-          perspiciatis maxime similique vel natus officiis repellendus optio.
-        </p>{" "}
-        <br />
-        <div className="relative grid w-full grid-cols-2 gap-4 overflow-hidden max-h-96">
+        <div className="relative grid w-full grid-cols-2 gap-4 overflow-hidden">
           <Image
-            src={image}
+            src={movie2}
             alt="maksa"
-            className="object-cover object-center w-full h-full rounded-md"
+            className="object-cover object-top w-full max-h-[450px] rounded-md"
             placeholder="blur"
           />
           <Image
-            src={image}
+            src={movie3}
             alt="maksa"
-            className="object-cover object-center w-full h-full rounded-md"
+            className="object-cover object-top w-full max-h-[450px] rounded-md"
+            placeholder="blur"
+          />
+          <Image
+            src={movie1}
+            alt="maksa"
+            className="object-cover object-top w-full max-h-[450px] rounded-md"
             placeholder="blur"
           />
         </div>
-        <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          commodi porro ipsum omnis, dignissimos ea quidem ad est ex accusantium
-          praesentium recusandae! Eos facere, repellendus nemo vitae ipsa fugiat
-          odit expedita modi! Nisi molestiae veniam, eaque minus ducimus
-          quisquam ex voluptatibus repudiandae sapiente, ipsa voluptates.
-          Consequatur natus non a qui. Dolores laborum unde delectus incidunt
-          voluptas quos velit, commodi itaque deleniti? Impedit, deleniti nisi
-          provident expedita, quaerat inventore itaque mollitia facilis
-          cupiditate eius nulla debitis minima, eum dicta!
-        </p>
       </section>
     </div>
   );

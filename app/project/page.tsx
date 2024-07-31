@@ -7,10 +7,7 @@ const Project = () => {
     <div className="flex flex-col items-center justify-center w-full gap-8">
       <Title
         title="my project"
-        desc="I&#39;m a frontend developer. Currently, I&#39;m still studying in my
-          final semester at Brawijaya University. I really like the technology
-          environment and have been studying this field for about 3 years. I
-          really enjoyed it🎉 i&#39;ts very exciting."
+        desc="With my experience from learning until now. these are some examples of projects that I can show from other projects."
       />
 
       <div className="grid grid-cols-2 gap-3 max-md:gap-6 max-md:grid-cols-1">
