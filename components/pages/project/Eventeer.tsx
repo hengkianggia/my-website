@@ -1,6 +1,4 @@
-"use client";
-import { useParams, useRouter } from "next/navigation";
-import React from "react";
+import React from "react";  
 
 import image from "../../../public/images/eventeer.webp";
 import Article from "../../../public/images/Article.png";
@@ -12,9 +10,6 @@ import Image from "next/image";
 import HeaderDetail from "@/components/HeaderDetail";
 
 const Eventeer = () => {
-  const path = useParams<{ id: string }>();
-  const router = useRouter();
-
   return (
     <div>
       <HeaderDetail date="Aug 2023" title="Eventeer" />

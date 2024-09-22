@@ -13,7 +13,7 @@ const DetailProject = () => {
     content = <Eventeer />;
   }
 
-  return <Wrapper className="items-start">{content}</Wrapper>;
+  return <Wrapper className="items-start max-md:px-0">{content}</Wrapper>;
 };
 
 export default DetailProject;
