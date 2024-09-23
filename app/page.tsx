@@ -15,10 +15,7 @@ export default function Home() {
     <>
       <div className="flex flex-col w-full gap-8">
         <Title
-          desc="I'm a frontend developer. Currently, I'm still studying in
-            my final semester at Brawijaya University. I really like the
-            technology environment and have been studying this field for about 3
-            years. I really enjoyed it🎉 i'ts very exciting."
+          desc="I'm a frontend developer. Currently, I'm a Fresh Graduate Information Technology field at Brawijaya University. I really like the technology environment and have been studying this field for about 4 years. I really enjoyed it🎉 i'ts very exciting."
           title="hey, i'm hengki🖐️"
         />
 
@@ -43,7 +40,6 @@ export default function Home() {
                               skill.title == "Axios" ? `text-xl` : `text-4xl`
                             }
                           />
-                    
                         </div>
                       </div>
                     </HoverCardTrigger>
