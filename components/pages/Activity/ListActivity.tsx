@@ -7,7 +7,7 @@ const ListActivity = ({
   desc,
   link,
 }: {
-  date: Date;
+  date: string;
   title: string;
   desc: string;
   link: string;
@@ -21,7 +21,7 @@ const ListActivity = ({
 
   return (
     <Link
-      href={`activity/${link}/detail`}
+      href={`activity/${link.toLocaleLowerCase()}/detail`}
       className="no-underline hover:text-my-black dark:hover:text-my-white"
     >
       <div className="w-full p-4 rounded-lg bg-opacity-5 bg-my-black dark:bg-my-white dark:bg-opacity-10">
