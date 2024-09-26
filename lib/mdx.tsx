@@ -2,13 +2,15 @@ import clsx from "clsx";
 import NextLink from "next/link";
 import React from "react";
 import { cn } from "./utils";
-import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
-import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+// import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+// import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export const componentsMDX = {
   h1: (props: any) => (
     <h2
-      className="relative font-semibold border-t-2 border-rose-200/5 pt-9 text-2xl  text-rose-200/95 sm:text-3xl"
+      className="relative font-semibold border-t-2 border-rose-200/5 pt-9 text-2xl sm:text-3xl"
       {...props}
     />
   ),
@@ -23,6 +25,9 @@ export const componentsMDX = {
   ),
   h4: (props: any) => (
     <h5 className="text-lg font-semibold  text-rose-200/95" {...props} />
+  ),
+  p: ({ node, ...props }: { node: any; [key: string]: any }) => (
+    <p className="text-justify" {...props} />
   ),
   hr: (props: any) => (
     <hr className="border-t-2 border-rose-200/5" {...props} />
@@ -41,7 +46,7 @@ export const componentsMDX = {
   },
   ul: (props: any) => (
     <ul
-      className="space-y-3 [li>&]:mt-3 [&>li]:relative [&>li]:pl-7 before:[&>li]:absolute before:[&>li]:left-1 before:[&>li]:top-2 before:[&>li]:h-1.5 before:[&>li]:w-1.5 before:[&>li]:rounded-full before:[&>li]:bg-rose-200/20"
+      className="space-y-3 ml-4 [li>&]:mt-3 [&>li]:relative [&>li]:pl-7 before:[&>li]:absolute before:[&>li]:left-1 before:[&>li]:top-2 before:[&>li]:h-1.5 before:[&>li]:w-1.5 before:[&>li]:rounded-full before:[&>li]:bg-rose-200/20"
       {...props}
     />
   ),
@@ -81,9 +86,11 @@ export const componentsMDX = {
     return !inline && match ? (
       <SyntaxHighlighter
         {...props}
-        customStyle={{ padding: "1rem", borderRadius: "5px" }}
+        customStyle={{ padding: "20px 0px", borderRadius: "5px" }}
         language={match[1]}
-        style={atomOneDark}
+        style={coldarkDark}
+        showLineNumbers
+        wrapLines={true}
       >
         {String(children)}
       </SyntaxHighlighter>
