@@ -6,9 +6,9 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 const HeaderDetail = ({ title, date }: { title: string; date: string }) => {
   const router = useRouter();
   return (
-    <>
+    <div className="w-full">
       <div
-        className="flex items-center gap-3 mb-4 text-sm text-gray-700 cursor-pointer dark:text-gray-400"
+        className="w-full flex items-center gap-3 mb-4 text-sm text-gray-700 cursor-pointer dark:text-gray-400"
         onClick={() => router.back()}
       >
         <IoIosArrowRoundBack size={24} />
@@ -20,7 +20,7 @@ const HeaderDetail = ({ title, date }: { title: string; date: string }) => {
           hengkianggia / {date}
         </p>
       </div>
-    </>
+    </div>
   );
 };
 
