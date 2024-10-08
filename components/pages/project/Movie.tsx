@@ -1,8 +1,8 @@
 import React from "react";
-import image from "../../../public/images/movie.png";
-import movie1 from "../../../public/images/movie1.png";
-import movie2 from "../../../public/images/movie2.png";
-import movie3 from "../../../public/images/movie3.png";
+import image from "../../../public/images/project/movie.png";
+import movie1 from "../../../public/images/project/movie1.png";
+import movie2 from "../../../public/images/project/movie2.png";
+import movie3 from "../../../public/images/project/movie3.png";
 import Image from "next/image";
 import HeaderDetail from "@/components/HeaderDetail";
 

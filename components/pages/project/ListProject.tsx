@@ -1,8 +1,11 @@
 import Image from "next/image";
 import React from "react";
 
-import eventeer from "@/public/images/eventeer.webp";
-import movie from "@/public/images/movie.png";
+import eventeer from "@/public/images/project/eventeer.webp";
+import movie from "@/public/images/project/movie.png";
+import jobs from "@/public/images/project/jobs.jpeg";
+import pandooin from "@/public/images/project/pandooin.png";
+import furnix from "@/public/images/project/furnix.png";
 import Link from "next/link";
 
 const ListProject = ({ title, description, date, id }: any) => {
@@ -14,6 +17,17 @@ const ListProject = ({ title, description, date, id }: any) => {
   });
 
   const urlTitle = title.toLowerCase().split(" ").join("-");
+
+  let srcImage = title.toLowerCase().includes("eventeer")
+    ? eventeer
+    : title.toLowerCase().includes("jobs")
+    ? jobs
+    : title.toLowerCase().includes("pandooin")
+    ? pandooin
+    : title.toLowerCase().includes("furnix")
+    ? furnix
+    : movie;
+
   return (
     <Link
       href={`/project/${urlTitle}/detail`}
@@ -22,7 +36,7 @@ const ListProject = ({ title, description, date, id }: any) => {
       <div className="grid w-full gap-1 cursor-pointer grid-rows-7 ">
         <div className="row-span-5 overflow-hidden">
           <Image
-            src={title.toLowerCase() == "eventeer" ? eventeer : movie}
+            src={srcImage}
             width={900}
             alt="image"
             className="object-cover w-full h-56 rounded-sm"

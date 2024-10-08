@@ -10,8 +10,8 @@ const Project = () => {
         desc="With my experience from learning until now. these are some examples of projects that I can show from other projects."
       />
 
-      <div className="grid grid-cols-2 gap-3 max-md:gap-6 max-md:grid-cols-1">
-        {project.map((item) => (
+      <div className="grid grid-cols-2 gap-3 gap-y-6 max-md:gap-6 max-md:grid-cols-1">
+        {project.reverse().map((item) => (
           <ListProject
             key={item.id}
             id={item.id}

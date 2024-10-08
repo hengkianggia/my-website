@@ -1,18 +1,18 @@
-import React from "react";  
+import React from "react";
 
-import image from "../../../public/images/eventeer.webp";
-import Article from "../../../public/images/Article.png";
-import Podcast from "../../../public/images/Podcast.png";
-import Video from "../../../public/images/Video.png";
-import Files from "../../../public/images/Recent.png";
-import Login from "../../../public/images/Login.png";
+import image from "../../../public/images/project/eventeer.webp";
+import Article from "../../../public/images/project/Article.png";
+import Podcast from "../../../public/images/project/Podcast.png";
+import Video from "../../../public/images/project/Video.png";
+import Files from "../../../public/images/project/Recent.png";
+import Login from "../../../public/images/project/Login.png";
 import Image from "next/image";
 import HeaderDetail from "@/components/HeaderDetail";
 
 const Eventeer = () => {
   return (
     <div>
-      <HeaderDetail date="Aug 2023" title="Eventeer" />
+      <HeaderDetail date="2023-08" title="Eventeer" />
 
       <div className="relative w-full overflow-hidden rounded-lg max-h-96">
         <Image
@@ -35,7 +35,9 @@ const Eventeer = () => {
           that enrich the user experience. Here is a more detailed explanation
           of my contribution:
         </p>
+
         <br />
+        
         <div>
           <ul className="space-y-5">
             <li className="relative">
