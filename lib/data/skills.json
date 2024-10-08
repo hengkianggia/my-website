@@ -32,6 +32,7 @@
   },
   { "title": "Zod", "experience": "2024-01-20", "icon": "logos:zod" },
   { "title": "Flutter", "experience": "2023-12-07", "icon": "logos:flutter" },
+  { "title": "MySQL", "experience": "2022-05-07", "icon": "logos:mysql" },
   { "title": "Git", "experience": "2022-03-01", "icon": "logos:git-icon" },
   {
     "title": "TailwindCSS",
@@ -39,10 +40,18 @@
     "icon": "logos:tailwindcss-icon"
   },
   {
+    "title": "SCSS",
+    "experience": "2022-08-03",
+    "icon": "vscode-icons:file-type-scss2"
+  },
+  {
     "title": "Bootstrap",
     "experience": "2022-04-03",
     "icon": "logos:bootstrap"
   },
   { "title": "Redux", "experience": "2022-04-25", "icon": "logos:redux" },
-  { "title": "Axios", "experience": "2023-07-25", "icon": "logos:axios" }
+  { "title": "Figma", "experience": "2021-04-25", "icon": "skill-icons:figma-dark" },
+  { "title": "Axios", "experience": "2023-07-25", "icon": "logos:axios" },
+  { "title": "GraphQL", "experience": "2024-04-25", "icon": "skill-icons:graphql-dark" },
+  { "title": "VueJS", "experience": "2024-08-25", "icon": "logos:vue" }
 ]

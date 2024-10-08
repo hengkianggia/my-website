@@ -38,87 +38,90 @@ const Jobs = () => {
 
         <br />
 
-        <div>
-          <ul className="space-y-5">
-            <li className="relative">
-              <h2 className="text-lg font-semibold">1. Job Listings</h2>
-              <p>
-                Browse a wide range of job postings across various industries
-                and locations, updated daily.
-              </p>
-            </li>
-            <li className="relative">
-              <h2 className="text-lg font-semibold">
-                2. Detailed Job Listings
-              </h2>
-              <p>
-                When job seekers browse the PNGKY Jobs platform, they can click
-                on any job listing to access a dedicated page with comprehensive
-                details about the position.
-              </p>
-              <div className="w-full mt-4 grid place-items-center">
-                <Image
-                  src={detail}
-                  alt="maksa"
-                  className="object-cover object-top w-9/12 max-md:w-full rounded-md"
-                  placeholder="blur"
-                />
-              </div>
-            </li>
-            <li className="relative">
-              <h2 className="text-lg font-semibold">3. Post a Job</h2>
-              <p>
-                Employers can easily post new job openings on the platform,
-                reaching a wide pool of qualified candidates.
-              </p>
-              <div className="w-full mt-4 grid place-items-center">
-                <Image
-                  src={post}
-                  alt="maksa"
-                  className="object-cover object-top w-9/12 max-md:w-full rounded-md"
-                  placeholder="blur"
-                />
-              </div>
-            </li>
-            <li className="relative">
-              <h2 className="text-lg font-semibold">4. Search Jobs</h2>
-              <p>
-                Job seekers can utilize the powerful search functionality to
-                find the perfect job opportunities based on their criteria.
-              </p>
-            </li>
-            <li className="relative">
-              <h2 className="text-lg font-semibold">5. Robust Job Filtering</h2>
-              <p>
-                Job seekers can easily filter job listings by type (e.g.,
-                full-time, part-time, internship) or location to find the
-                perfect opportunities that match their preferences.
-              </p>
-            </li>
-            <li className="relative">
-              <h2 className="text-lg font-semibold">
-                6. Employer Job Posting and Approval
-              </h2>
-              <p>
+        <ul className="flex flex-col gap-10">
+          <li className="relative">
+            <h2 className="text-lg font-semibold">1. Job Listings</h2>
+            <p>
+              Browse a wide range of job postings across various industries and
+              locations, updated daily.
+            </p>
+          </li>
+          <li className="relative">
+            <h2 className="text-lg font-semibold">2. Detailed Job Listings</h2>
+            <p>
+              When job seekers browse the PNGKY Jobs platform, they can click on
+              any job listing to access a dedicated page with comprehensive
+              details about the position.
+            </p>
+            <div className="w-full mt-4 grid place-items-center">
+              <Image
+                src={detail}
+                alt="maksa"
+                className="object-cover object-top w-9/12 max-md:w-full rounded-md"
+                placeholder="blur"
+              />
+            </div>
+          </li>
+          <li className="relative">
+            <h2 className="text-lg font-semibold">3. Post a Job</h2>
+            <p>
+              Employers can easily post new job openings on the platform,
+              reaching a wide pool of qualified candidates.
+            </p>
+            <div className="w-full mt-4 grid place-items-center">
+              <Image
+                src={post}
+                alt="maksa"
+                className="object-cover object-top w-9/12 max-md:w-full rounded-md"
+                placeholder="blur"
+              />
+            </div>
+          </li>
+          <li className="relative">
+            <h2 className="text-lg font-semibold">4. Search Jobs</h2>
+            <p>
+              Job seekers can utilize the powerful search functionality to find
+              the perfect job opportunities based on their criteria.
+            </p>
+          </li>
+          <li className="relative">
+            <h2 className="text-lg font-semibold">5. Robust Job Filtering</h2>
+            <p>
+              Job seekers can easily filter job listings by type (e.g.,
+              full-time, part-time, internship) or location to find the perfect
+              opportunities that match their preferences.
+            </p>
+          </li>
+          <li className="relative">
+            <h2 className="text-lg font-semibold">
+              6. Employer Job Posting and Approval
+            </h2>
+            <ul className="relative ml-10 max-md:ml-4  mt-4 space-y-2 list-disc">
+              <li>
                 Employers can seamlessly post new job openings on the PNGKY Jobs
-                platform, reaching a wide pool of qualified candidates. All job
-                postings submitted by employers are reviewed and approved by the
-                PNGKY Jobs admin team before being published live on the
-                website. The admin page provides a centralized interface for the
-                PNGKY Jobs team to efficiently manage, approve, or decline job
+                platform, reaching a wide pool of qualified candidates.
+              </li>
+              <li>
+                All job postings submitted by employers are reviewed and
+                approved by the PNGKY Jobs admin team before being published
+                live on the website.
+              </li>
+              <li>
+                The admin page provides a centralized interface for the PNGKY
+                Jobs team to efficiently manage, approve, or decline job
                 postings based on established guidelines and criteria.
-              </p>
-              <div className="w-full mt-4 grid place-items-center">
-                <Image
-                  src={admin}
-                  alt="maksa"
-                  className="object-cover object-top w-9/12 max-md:w-full rounded-md"
-                  placeholder="blur"
-                />
-              </div>
-            </li>
-          </ul>
-        </div>
+              </li>
+            </ul>
+            <div className="w-full mt-4 grid place-items-center">
+              <Image
+                src={admin}
+                alt="maksa"
+                className="object-cover object-top w-9/12 max-md:w-full rounded-md"
+                placeholder="blur"
+              />
+            </div>
+          </li>
+        </ul>
 
         <br />
 

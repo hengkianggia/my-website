@@ -24,9 +24,9 @@ export default function Home() {
         <section className="w-full">
           <h1 className="mb-4 text-xl max-md:mb-4">My coding skills 🎉</h1>
           <div className="w-full flex items-center justify-center flex-wrap gap-2">
-            {skills.map((skill) => {
+            {skills.map((skill, idx) => {
               return (
-                <>
+                <div key={idx}>
                   <HoverCard>
                     <HoverCardTrigger className="no-underline cursor-pointer">
                       <div
@@ -48,7 +48,7 @@ export default function Home() {
                       <p>{compareDateWithNow(skill.experience)} experience</p>
                     </HoverCardContent>
                   </HoverCard>
-                </>
+                </div>
               );
             })}
           </div>
