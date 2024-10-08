@@ -3,6 +3,7 @@ import Wrapper from "@/components/Wrapper";
 import ListActivity from "@/components/pages/Activity/ListActivity";
 import React from "react";
 import activity from "@/lib/data/listActivity.json";
+import Tiptap from "@/components/Tiptap";
 
 const Activity = () => {
   return (
@@ -20,10 +21,12 @@ const Activity = () => {
             date={item.date}
             desc={item.desc}
             title={item.title}
-            link={item.title}
+            link={item.id}
           />
         ))}
       </div>
+
+      <Tiptap />
     </Wrapper>
   );
 };

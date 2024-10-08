@@ -1,17 +1,12 @@
 [
   {
-    "title": "Makmu kiper dengan gaya bebas masookk",
-    "date": "2021-05-25",
-    "desc": "Within a few years of my journey to become a developer. There are several impressive experiences that I have had, including those below"
-  },
-  {
-    "title": "Makmu kiper dengan gaya bebas masookk",
-    "date": "2021-05-25",
-    "desc": "Within a few years of my journey to become a developer. There are several impressive experiences that I have had, including those below"
-  },
-  {
-    "title": "Makmu kiper dengan gaya bebas masookk",
-    "date": "2021-05-25",
-    "desc": "Within a few years of my journey to become a developer. There are several impressive experiences that I have had, including those below"
+    "id": 213121313,
+    "title": "I just learn express js",
+    "date": "2024-07-25",
+    "desc": "Within 3 month I learn express js. Here is a more detailed explanation of my contribution",
+    "content": {
+      "title": "I just learn express js",
+      "code": "# Judul Utama\n\n> Dengan perubahan ini, setiap kali pengguna mengklik tombol \"Copy\" pada blok kode, teks kode akan disalin ke clipboard dan tombol akan berubah warna menjadi hijau selama 2 detik.\n \n> lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n- Item 1\n- Item 2\n- Item 3\n\n\nimport { cn } from \"@/lib/utils\";\nimport Image, { StaticImageData } from \"next/image\";\nimport React from \"react\";\n\nconst Images = ({\n  className,\n  image,\n}: {\n  className?: string;\n  image: StaticImageData;\n}) => {\n  return (\n    <>\n      <Image src={image} alt=\"desc\" fill className={cn(\"w-full\", className)} />\n    </>\n  );\n};\n\nexport default Images;\n"
+    }
   }
 ]

@@ -1,9 +1,43 @@
 import React from "react";
 import HeaderDetail from "@/components/HeaderDetail";
 import CustomMarkdown from "@/components/pages/Activity/CustomMarkdown";
+import activity from "@/lib/data/listActivity.json";
 
-const DetailActivity = () => {
-  const markdownContent = `
+interface CustomMarkdownProps {
+  id: number;
+  title: string;
+  date: string;
+  desc: string;
+  content: {
+    title: string;
+    code: string;
+  };
+}
+
+const DetailActivity = ({ params }: { params: { id: number } }) => {
+  let markdownContent: CustomMarkdownProps = {
+    id: 0,
+    title: "",
+    date: "",
+    desc: "",
+    content: {
+      title: "",
+      code: "",
+    },
+  };
+
+  const id = params.id;
+  activity.forEach((element) => {
+    if (element.id == id) {
+      markdownContent = element;
+    }
+  });
+
+  if (!markdownContent) {
+    return <div>Activity not found</div>;
+  }
+
+  const markCode = `
 # Judul Utama
 
 > Dengan perubahan ini, setiap kali pengguna mengklik tombol "Copy" pada blok kode, teks kode akan disalin ke clipboard dan tombol akan berubah warna menjadi hijau selama 2 detik.
@@ -13,6 +47,19 @@ const DetailActivity = () => {
 - Item 1
 - Item 2
 - Item 3
+
+My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").
+
+Italicized text is the *cat's meow*.
+> Dorothy followed her through many of the beautiful rooms in her castle.
+
+I just love **bold text**.
+
+I love supporting **[EFF](https://eff.org)**. This is the *[Markdown Guide](https://www.markdownguide.org)*.
+
+
+![Philadelphia's Magic Gardens. This place was so cool!](https://naruto-official.com/common/ogp/NTOS_OG-main.png "Philadelphia's Magic Gardens")
+
 
 \`\`\`javascript
 import { cn } from "@/lib/utils";
@@ -36,15 +83,14 @@ const Images = ({
 export default Images;
 \`\`\`
   `;
+
   return (
     <div className="w-full">
-      <HeaderDetail date="Aug 2023" title="Eventeer" />
-
+      <HeaderDetail date={markdownContent.date} title={markdownContent.title} />
       <div className="relative w-full overflow-hidden">
-        <CustomMarkdown content={markdownContent} />
+        <CustomMarkdown content={markCode} />
       </div>
     </div>
   );
 };
-
 export default DetailActivity;

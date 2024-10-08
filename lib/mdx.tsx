@@ -2,10 +2,9 @@ import clsx from "clsx";
 import NextLink from "next/link";
 import React from "react";
 import { cn } from "./utils";
-// import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-// import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import Image from "next/image";
 
 export const componentsMDX = {
   h1: (props: any) => (
@@ -16,7 +15,7 @@ export const componentsMDX = {
   ),
   h2: (props: any) => (
     <h3
-      className="relative font-semibold border-t-2 border-rose-200/5 pt-9 text-2xl  text-rose-200/95 sm:text-2xl"
+      className="relative font-semibold border-t-2 border-rose-200/5 pt-9 text-2xl sm:text-2xl"
       {...props}
     />
   ),
@@ -46,10 +45,15 @@ export const componentsMDX = {
   },
   ul: (props: any) => (
     <ul
-      className="space-y-3 ml-4 [li>&]:mt-3 [&>li]:relative [&>li]:pl-7 before:[&>li]:absolute before:[&>li]:left-1 before:[&>li]:top-2 before:[&>li]:h-1.5 before:[&>li]:w-1.5 before:[&>li]:rounded-full before:[&>li]:bg-rose-200/20"
+      style={{
+        margin: "25px 0",
+        marginLeft: "20px",
+        listStyle: "inside",
+      }}
       {...props}
     />
   ),
+  // li: (props: any) => <li className="list-disc" {...props} />,
   ol: (props: any) => (
     <ol className="list-decimal space-y-3 pl-10" {...props} />
   ),
@@ -67,6 +71,24 @@ export const componentsMDX = {
   ),
   del: (props: any) => (
     <del className="text-rose-200/50 line-through" {...props} />
+  ),
+  img: ({
+    src,
+    alt,
+    ...props
+  }: {
+    src: string;
+    alt: string;
+    [key: string]: any;
+  }) => (
+    <Image
+      src={src}
+      alt={alt}
+      width={800}
+      height={800}
+      className="max-w-full h-auto rounded-md shadow-md cursor-pointer"
+      {...props}
+    />
   ),
   code: ({
     node,
@@ -86,11 +108,16 @@ export const componentsMDX = {
     return !inline && match ? (
       <SyntaxHighlighter
         {...props}
-        customStyle={{ padding: "20px 0px", borderRadius: "5px" }}
+        customStyle={{
+          padding: "20px 0px",
+          borderRadius: "5px",
+          marginTop: "50px",
+        }}
         language={match[1]}
         style={coldarkDark}
         showLineNumbers
         wrapLines={true}
+        className={className}
       >
         {String(children)}
       </SyntaxHighlighter>

@@ -1,4 +1,4 @@
-import React from "react";  
+import React from "react";
 
 import image from "../../../public/images/eventeer.webp";
 import Article from "../../../public/images/Article.png";
@@ -12,7 +12,7 @@ import HeaderDetail from "@/components/HeaderDetail";
 const Eventeer = () => {
   return (
     <div>
-      <HeaderDetail date="Aug 2023" title="Eventeer" />
+      <HeaderDetail date="08-14-2023" title="Eventeer" />
 
       <div className="relative w-full overflow-hidden rounded-lg max-h-96">
         <Image

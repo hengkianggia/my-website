@@ -10,7 +10,7 @@ const ListActivity = ({
   date: string;
   title: string;
   desc: string;
-  link: string;
+  link: number;
 }) => {
   const datee = new Date(date);
   const dateee = datee.toLocaleDateString("en-EN", {
@@ -21,7 +21,7 @@ const ListActivity = ({
 
   return (
     <Link
-      href={`activity/${link.toLocaleLowerCase()}/detail`}
+      href={`activity/${link}/detail`}
       className="no-underline hover:text-my-black dark:hover:text-my-white"
     >
       <div className="w-full p-4 rounded-lg bg-opacity-5 bg-my-black dark:bg-my-white dark:bg-opacity-10">

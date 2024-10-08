@@ -9,7 +9,7 @@ import HeaderDetail from "@/components/HeaderDetail";
 const Movie = () => {
   return (
     <div>
-      <HeaderDetail title="PNGKY Movie" date="Jan 2023" />
+      <HeaderDetail title="PNGKY Movie" date="01-18-2023" />
 
       <div className="relative w-full overflow-hidden rounded-lg max-h-96">
         <Image
